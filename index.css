@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   font-size: 14px;
-  background-color: #0f2f2e; /* A darker teal / blue-green */
+  background-color: #0f2f2e;
   color: lightgray;
 }
 
@@ -13,7 +13,8 @@ body {
 
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center; 
+  gap: 0;
 
   padding: 16px;
 
@@ -30,8 +31,12 @@ body {
   height: 28px;
   background: #093331;
   position: absolute;
-  top: 16px;
+
+  top: 50%;
+  transform: translateY(-50%);
+
   left: 16px;
+
   z-index: 9;
   border: 0.5px solid rgba(0, 0, 0, 0.04);
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04);
@@ -66,6 +71,7 @@ body {
 
   cursor: pointer;
 }
+
 
 .tab--1:checked ~ .indicator {
   left: 16px;
