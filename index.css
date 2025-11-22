@@ -19,6 +19,9 @@ body {
 
   background-color: #3b6967;
   border-radius: 9px;
+
+  width: max-content;
+  margin: 0 auto;
 }
 
 .indicator {
