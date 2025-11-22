@@ -1,10 +1,17 @@
+:root {
+  --font-family: Arial, sans-serif;
+  --font-size: 14px;
+  --text-color: lightgray;
+  --bg-color: #0f2f2e;
+}
+
 body {
   padding: 20px;
   margin: 0;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  background-color: #0f2f2e;
-  color: lightgray;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 /* Header Layout */
