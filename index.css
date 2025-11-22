@@ -21,7 +21,7 @@ body {
   border-radius: 9px;
 
   width: max-content;
-  margin: 16px auto;
+  margin: 20px auto;
 
 }
 
@@ -43,7 +43,7 @@ body {
 .tab {
   width: 130px;
   height: 28px;
-  position: absolute;
+  position: relative;
   z-index: 99;
   outline: none;
   opacity: 0;
@@ -69,7 +69,7 @@ body {
 }
 
 .tab--1:checked ~ .indicator {
-  left: 0;
+  left: calc(130px * 0);
 }
 
 .tab--2:checked ~ .indicator {
