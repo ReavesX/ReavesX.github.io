@@ -6,3 +6,44 @@ body {
   background-color: #0f2f2e;
   color: lightgray;
 }
+
+/* Header Layout */
+.site-header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 40px auto; /* Centered with bottom margin */
+}
+
+.site-header .ModeToggle {
+  justify-self: start;
+}
+
+.site-header .Navigation {
+  justify-self: center;
+}
+
+.site-header .Download {
+  justify-self: end;
+}
+
+/* Responsive: Stack on smaller screens */
+@media (max-width: 768px) {
+  .site-header {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+  }
+
+  .site-header .ModeToggle,
+  .site-header .Navigation,
+  .site-header .Download {
+    justify-self: center;
+  }
+
+  .site-header .Navigation {
+    order: -1; /* Put navigation on top */
+  }
+}
