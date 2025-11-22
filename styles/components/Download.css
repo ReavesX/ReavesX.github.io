@@ -14,6 +14,7 @@
   border: 2px solid #3b6967;
   display: flex;
   align-items: center;
+  justify-content: center;
   border-radius: 50px;
   width: 160px;
   cursor: pointer;
@@ -48,9 +49,13 @@
   color: var(--text-color);
   transition: all 0.4s ease;
   position: absolute;
-  right: 18px;
-  bottom: 14px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
+  width: 100%;
+  pointer-events: none;
+  padding-left: 20px; /* Offset for the circle icon */
 }
 
 .label .title:last-child {
@@ -73,7 +78,7 @@
 }
 
 .label .circle .icon {
-  color: #fff;
+  color: var(--text-color);
   width: 30px;
   position: absolute;
   top: 50%;
@@ -86,7 +91,7 @@
   aspect-ratio: 1;
   width: 15px;
   border-radius: 2px;
-  background-color: #fff;
+  background-color: var(--text-color);
   opacity: 0;
   visibility: hidden;
   position: absolute;
