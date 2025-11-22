@@ -11,13 +11,13 @@
 }
 
 body.light-mode {
-  --bg-color: #efefef;
-  --text-color: #0f2f2e;
-  --nav-bg: #dcdcdc;
-  --nav-indicator: #ffffff;
+  --bg-color: #3b6967;
+  --text-color: #ffffff;
+  --nav-bg: #0f2f2e;
+  --nav-indicator: #3b6967;
   --btn-border: #0f2f2e;
   --btn-circle: #0f2f2e;
-  --btn-shadow: #dcdcdc;
+  --btn-shadow: #0f2f2e;
 }
 
 body {
