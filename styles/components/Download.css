@@ -89,6 +89,7 @@
   position: relative;
   box-shadow: 0 0 0 0 #093331;
   overflow: hidden;
+  flex-shrink: 0; /* Prevent circle from squishing */
 }
 
 .label .circle .icon {
@@ -108,10 +109,7 @@
   background-color: var(--text-color);
   opacity: 0;
   visibility: hidden;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /* Removed absolute positioning to let flexbox center it */
   transition: all 0.4s ease;
 }
 
@@ -127,7 +125,8 @@
 }
 
 .label:has(.input:checked) {
-  width: 57px;
+  width: 59px; /* Adjusted to fit 45px circle + 10px padding + 4px border */
+  justify-content: center; /* Ensure circle is centered */
   animation: installed 0.4s ease 3.5s forwards;
 }
 
