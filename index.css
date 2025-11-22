@@ -26,7 +26,7 @@ body {
 
 .indicator {
   content: "";
-  width: 65px;
+  width: 130px;
   height: 28px;
   background: #093331;
   position: relative;
@@ -51,7 +51,7 @@ body {
 }
 
 .tab_label {
-  width: 65px;
+  width: 130px;
   height: 28px;
 
   position: relative;
