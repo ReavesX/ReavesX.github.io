@@ -45,7 +45,7 @@
 }
 
 .label .title {
-  font-size: 17px;
+  font-size: var(--font-size);
   color: var(--text-color);
   transition: all 0.4s ease;
   position: absolute;
