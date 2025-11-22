@@ -5,6 +5,11 @@
   --bg-color: #0f2f2e;
 }
 
+body.light-mode {
+  --bg-color: #efefef;
+  --text-color: #0f2f2e;
+}
+
 body {
   padding: 20px;
   margin: 0;
