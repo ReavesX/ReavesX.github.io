@@ -43,9 +43,6 @@ body {
   z-index: 99;
   outline: none;
   opacity: 0;
-  align: center;
-  align-items: center;
-  justify-content: center;
 }
 
 .tab_label {
