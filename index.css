@@ -68,22 +68,22 @@ body {
 }
 
 .tab--1:checked ~ .indicator {
-  left: 2px;
+  left: 16px;
 }
 
 .tab--2:checked ~ .indicator {
-  left: calc(130px + 2px);
+  left: calc(16px + 130px);
 }
 
 .tab--3:checked ~ .indicator {
-  left: calc(130px * 2 + 2px);
+  left: calc(16px + 130px * 2);
 }
 
 .tab--4:checked ~ .indicator {
-  left: calc(130px * 3 + 2px);
+  left: calc(16px + 130px * 3);
 }
 
 .tab--5:checked ~ .indicator {
-  left: calc(130px * 4 + 2px);
+  left: calc(16px + 130px * 4);
 }
 
