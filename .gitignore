@@ -1,0 +1,7 @@
+node_modules
+.DS_Store
+.husky
+.vscode
+package-lock.json
+.prettierrc
+package.json

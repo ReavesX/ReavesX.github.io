@@ -1,19 +1,10 @@
-body {
-  padding: 20px;
-  margin: 0;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  background-color: #0f2f2e;
-  color: lightgray;
-}
-
 /* Navigation Menu Styling*/
 .tab-container {
   position: relative;
 
   display: flex;
   flex-direction: row;
-  align-items: center; 
+  align-items: center;
   gap: 0;
 
   padding: 16px;
@@ -26,7 +17,7 @@ body {
 }
 
 .indicator {
-  content: "";
+  content: '';
   width: 130px;
   height: 28px;
   background: #093331;
@@ -39,7 +30,9 @@ body {
 
   z-index: 9;
   border: 0.5px solid rgba(0, 0, 0, 0.04);
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04);
+  box-shadow:
+    0px 3px 8px rgba(0, 0, 0, 0.12),
+    0px 3px 1px rgba(0, 0, 0, 0.04);
   border-radius: 7px;
   transition: all 0.2s ease-out;
 }
@@ -64,8 +57,7 @@ body {
   align-items: center;
   justify-content: center;
 
-
-  padding-top: 2px; 
+  padding-top: 2px;
   padding-bottom: 0;
 
   border: 0;
@@ -75,7 +67,6 @@ body {
 
   cursor: pointer;
 }
-
 
 .tab--1:checked ~ .indicator {
   left: 16px;
@@ -96,4 +87,3 @@ body {
 .tab--5:checked ~ .indicator {
   left: calc(16px + 130px * 4);
 }
-
