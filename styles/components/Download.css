@@ -16,7 +16,7 @@
   border: 2px solid #3b6967;
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; Removed to keep circle on left */
   border-radius: 50px;
   width: 160px;
   cursor: pointer;
@@ -57,7 +57,12 @@
   text-align: center;
   width: 100%;
   pointer-events: none;
-  padding-left: 20px; /* Offset for the circle icon */
+  /* padding-left: 20px; Removed global padding */
+}
+
+/* Offset only the Download text to avoid overlapping the circle */
+.label .title:first-of-type {
+  padding-left: 45px;
 }
 
 .label .title:last-child {
@@ -212,6 +217,6 @@
   100% {
     opacity: 1;
     visibility: visible;
-    right: 56px;
+    /* right: 56px; Removed to allow centering */
   }
 }
