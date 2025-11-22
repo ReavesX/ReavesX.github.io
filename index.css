@@ -1,3 +1,13 @@
+body {
+  padding: 20px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  background-color: #0f2f2e; /* A darker teal / blue-green */
+  color: lightgray;
+}
+
+/* Navigation Menu Styling*/
 .tab-container {
   position: relative;
 
