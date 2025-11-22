@@ -17,7 +17,7 @@ body {
 
   padding: 2px;
 
-  background-color: #dadadb;
+  background-color: #3b6967;
   border-radius: 9px;
 }
 
@@ -25,7 +25,7 @@ body {
   content: "";
   width: 130px;
   height: 28px;
-  background: #ffffff;
+  background: #093331;
   position: absolute;
   top: 2px;
   left: 2px;
