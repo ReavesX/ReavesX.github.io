@@ -4,6 +4,8 @@
   margin: 0;
   box-sizing: border-box;
   font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: var(--text-color);
   display: flex;
   justify-content: center;
   align-items: center;
