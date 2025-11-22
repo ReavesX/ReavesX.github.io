@@ -23,7 +23,7 @@ body {
 
 .indicator {
   content: "";
-  width: 80px;
+  width: 130px;
   height: 28px;
   background: #093331;
   position: absolute;
@@ -37,16 +37,19 @@ body {
 }
 
 .tab {
-  width: 80px;
+  width: 130px;
   height: 28px;
   position: absolute;
   z-index: 99;
   outline: none;
   opacity: 0;
+  align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .tab_label {
-  width: 80px;
+  width: 130px;
   height: 28px;
 
   position: relative;
@@ -69,17 +72,17 @@ body {
 }
 
 .tab--2:checked ~ .indicator {
-  left: calc(80px + 2px);
+  left: calc(130px + 2px);
 }
 
 .tab--3:checked ~ .indicator {
-  left: calc(80px * 2 + 2px);
+  left: calc(130px * 2 + 2px);
 }
 
 .tab--4:checked ~ .indicator {
-  left: calc(80px * 3 + 2px);
+  left: calc(130px * 3 + 2px);
 }
 
 .tab--5:checked ~ .indicator {
-  left: calc(80px * 4 + 2px);
+  left: calc(130px * 4 + 2px);
 }
