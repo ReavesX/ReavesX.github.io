@@ -57,6 +57,7 @@
   width: 100%;
   pointer-events: none;
   box-sizing: border-box;
+  margin: 0; /* Remove default p tag margins */
 }
 
 .label .title:first-of-type {
