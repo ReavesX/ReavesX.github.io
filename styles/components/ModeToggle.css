@@ -10,12 +10,12 @@
       linear,
       left top,
       right top,
-      color-stop(50%, #efefef),
-      color-stop(50%, #2a2a2a)
+      color-stop(50%, #3b6967),
+      color-stop(50%, #0f2f2e)
     )
     no-repeat;
-  background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
-  background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+  background: -o-linear-gradient(left, #3b6967 50%, #0f2f2e 50%) no-repeat;
+  background: linear-gradient(to right, #3b6967 50%, #0f2f2e 50%) no-repeat;
   background-size: 205%;
   background-position: 0;
   -webkit-transition: 0.4s;
@@ -38,12 +38,12 @@
       linear,
       left top,
       right top,
-      color-stop(50%, #efefef),
-      color-stop(50%, #2a2a2a)
+      color-stop(50%, #3b6967),
+      color-stop(50%, #0f2f2e)
     )
     no-repeat;
-  background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
-  background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+  background: -o-linear-gradient(left, #3b6967 50%, #0f2f2e 50%) no-repeat;
+  background: linear-gradient(to right, #3b6967 50%, #0f2f2e 50%) no-repeat;
   background-size: 205%;
   background-position: 100%;
   border-radius: 50%;
