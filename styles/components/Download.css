@@ -22,6 +22,7 @@
   transition: all 0.4s ease;
   padding: 5px;
   position: relative;
+  box-sizing: border-box;
 }
 
 .label::before {
@@ -50,21 +51,27 @@
   color: var(--text-color);
   transition: all 0.4s ease;
   position: absolute;
-  left: 0;
   top: 50%;
   transform: translateY(-50%);
-  text-align: center;
-  width: 100%;
   pointer-events: none;
   box-sizing: border-box;
   margin: 0; /* Remove default p tag margins */
+  line-height: 1;
 }
 
+/* Center "Download" in the space to the right of the circle */
 .label .title:first-of-type {
-  padding-left: 30px;
+  left: 50px; /* 45px circle + 5px padding */
+  width: calc(100% - 55px); /* Full width minus left offset and right padding balance */
+  text-align: center;
+  padding-left: 0;
 }
 
+/* Center "Open" in the entire button */
 .label .title:last-child {
+  left: 0;
+  width: 100%;
+  text-align: center;
   opacity: 0;
   visibility: hidden;
   padding-left: 0;
