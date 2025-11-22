@@ -9,7 +9,7 @@
 
   padding: 16px;
 
-  background-color: #3b6967;
+  background-color: var(--nav-bg);
   border-radius: 9px;
 
   width: max-content;
@@ -20,7 +20,7 @@
   content: '';
   width: 130px;
   height: 28px;
-  background: #093331;
+  background: var(--nav-indicator);
   position: absolute;
 
   top: 50%;

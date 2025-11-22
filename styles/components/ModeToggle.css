@@ -10,12 +10,12 @@
       linear,
       left top,
       right top,
-      color-stop(50%, #3b6967),
-      color-stop(50%, #0f2f2e)
+      color-stop(50%, var(--btn-border)),
+      color-stop(50%, var(--bg-color))
     )
     no-repeat;
-  background: -o-linear-gradient(left, #3b6967 50%, #0f2f2e 50%) no-repeat;
-  background: linear-gradient(to right, #3b6967 50%, #0f2f2e 50%) no-repeat;
+  background: -o-linear-gradient(left, var(--btn-border) 50%, var(--bg-color) 50%) no-repeat;
+  background: linear-gradient(to right, var(--btn-border) 50%, var(--bg-color) 50%) no-repeat;
   background-size: 205%;
   background-position: 0;
   -webkit-transition: 0.4s;
@@ -25,7 +25,7 @@
   position: relative;
   cursor: pointer;
   font-size: var(--toggle-size);
-  border: 2px solid #3b6967;
+  border: 2px solid var(--btn-border);
 }
 
 .theme-checkbox::before {
@@ -40,12 +40,12 @@
       linear,
       left top,
       right top,
-      color-stop(50%, #3b6967),
-      color-stop(50%, #0f2f2e)
+      color-stop(50%, var(--btn-border)),
+      color-stop(50%, var(--bg-color))
     )
     no-repeat;
-  background: -o-linear-gradient(left, #3b6967 50%, #0f2f2e 50%) no-repeat;
-  background: linear-gradient(to right, #3b6967 50%, #0f2f2e 50%) no-repeat;
+  background: -o-linear-gradient(left, var(--btn-border) 50%, var(--bg-color) 50%) no-repeat;
+  background: linear-gradient(to right, var(--btn-border) 50%, var(--bg-color) 50%) no-repeat;
   background-size: 205%;
   background-position: 100%;
   border-radius: 50%;

@@ -3,11 +3,21 @@
   --font-size: 14px;
   --text-color: lightgray;
   --bg-color: #0f2f2e;
+  --nav-bg: #3b6967;
+  --nav-indicator: #093331;
+  --btn-border: #3b6967;
+  --btn-circle: #3b6967;
+  --btn-shadow: #093331;
 }
 
 body.light-mode {
   --bg-color: #efefef;
   --text-color: #0f2f2e;
+  --nav-bg: #dcdcdc;
+  --nav-indicator: #ffffff;
+  --btn-border: #0f2f2e;
+  --btn-circle: #0f2f2e;
+  --btn-shadow: #dcdcdc;
 }
 
 body {
