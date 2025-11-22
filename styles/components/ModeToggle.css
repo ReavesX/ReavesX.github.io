@@ -25,6 +25,7 @@
   position: relative;
   cursor: pointer;
   font-size: var(--toggle-size);
+  border: 2px solid #3b6967;
 }
 
 .theme-checkbox::before {
