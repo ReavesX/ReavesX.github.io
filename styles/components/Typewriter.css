@@ -3,8 +3,8 @@
   background-color: #1e1e1e;
   border-radius: 8px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  width: 80%;
-  max-width: 800px;
+  width: 90%; /* Increased width */
+  max-width: 1000px; /* Increased max-width */
   overflow: hidden;
   font-family: 'Courier New', Courier, monospace;
   text-align: left;
@@ -37,11 +37,11 @@
 
 /* Terminal Window */
 .terminal-window {
-  padding: 20px;
+  padding: 30px; /* Increased padding */
   color: #f0f0f0;
-  font-size: 1.2rem;
+  font-size: 1.5rem; /* Increased font size */
   line-height: 1.6;
-  min-height: 150px;
+  min-height: 200px; /* Increased min-height */
 }
 
 .prompt {

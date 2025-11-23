@@ -12,6 +12,44 @@ if (viewTheme) {
   console.error('Theme toggle NOT found!');
 }
 
+// Typewriter Logic
+const command = 'cat about_me.txt';
+const outputText =
+  "Don Jackson, I'm a Software Engineering student at Southern New Hampshire University. I enjoy tinkering with electronics and building apps.";
+const typeSpeed = 50;
+const typeElement = document.getElementById('typewriter-text');
+let charIndex = 0;
+let isTypingCommand = true;
+
+function typeWriter() {
+  if (!typeElement) return;
+
+  if (isTypingCommand) {
+    if (charIndex < command.length) {
+      typeElement.innerHTML += command.charAt(charIndex);
+      charIndex++;
+      setTimeout(typeWriter, typeSpeed);
+    } else {
+      // Command finished, wait a bit then show output
+      isTypingCommand = false;
+      setTimeout(() => {
+        typeElement.innerHTML += '<br/><br/>'; // New line for output
+        charIndex = 0; // Reset for output text
+        typeWriter();
+      }, 500);
+    }
+  } else {
+    if (charIndex < outputText.length) {
+      typeElement.innerHTML += outputText.charAt(charIndex);
+      charIndex++;
+      setTimeout(typeWriter, typeSpeed);
+    }
+  }
+}
+
+// Start typing when page loads
+window.addEventListener('load', typeWriter);
+
 // donwload file logic
 const downloadCheckbox = document.querySelector('#download-checkbox');
 const fileName = 'Resume.pdf';
