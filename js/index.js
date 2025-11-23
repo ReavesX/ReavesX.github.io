@@ -31,3 +31,26 @@ if (downloadCheckbox) {
     }
   });
 }
+
+// Navigation Scroll Logic
+const navMap = {
+  tab1: 'home',
+  tab2: 'about',
+  tab3: 'skills',
+  tab4: 'projects',
+  tab5: 'contact',
+};
+
+const tabs = document.querySelectorAll('input[name="tab"]');
+
+tabs.forEach((tab) => {
+  tab.addEventListener('change', function () {
+    if (this.checked) {
+      const targetId = navMap[this.id];
+      const targetSection = document.getElementById(targetId);
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  });
+});
