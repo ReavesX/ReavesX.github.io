@@ -1,3 +1,4 @@
+// switch theme view logic
 const viewTheme = document.querySelector('#theme-checkbox');
 
 if (viewTheme) {
@@ -11,6 +12,7 @@ if (viewTheme) {
   console.error('Theme toggle NOT found!');
 }
 
+// donwload file logic
 const downloadCheckbox = document.querySelector('#download-checkbox');
 const fileName = 'Resume.pdf';
 const filePath = 'Resume.pdf';

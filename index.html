@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="styles/components/ModeToggle.css" />
 <link rel="stylesheet" href="styles/components/Waves.css" />
 <link rel="stylesheet" href="styles/layout/Sections.css" />
+<link rel="stylesheet" href="styles/components/Typewriter.css" />
 
 <body>
   <header class="site-header">
@@ -62,8 +63,17 @@
   <!-- Main Content -->
   <main>
     <section id="home" class="content-section">
-      <h1>Home</h1>
-      <p>Welcome to my portfolio.</p>
+      <div class="terminal-container">
+        <div class="terminal-header">
+          <span class="terminal-button red"></span>
+          <span class="terminal-button yellow"></span>
+          <span class="terminal-button green"></span>
+        </div>
+        <div class="terminal-window">
+          <span class="prompt">&gt;</span> <span id="typewriter-text"></span
+          ><span class="cursor">█</span>
+        </div>
+      </div>
     </section>
 
     <section id="about" class="content-section">
