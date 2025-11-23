@@ -8,11 +8,12 @@
   --btn-border: #3b6967;
   --btn-circle: #3b6967;
   --btn-shadow: #093331;
+
   /* Wave Colors (Dark Mode) */
-  --wave-1: rgba(59, 105, 103, 0.7); /* Lightest */
+  --wave-1: rgba(59, 105, 103, 0.7);
   --wave-2: rgba(59, 105, 103, 0.5);
   --wave-3: rgba(59, 105, 103, 0.3);
-  --wave-4: #0f2f2e; /* Matches Background */
+  --wave-4: #0f2f2e;
 }
 
 body.light-mode {
@@ -23,11 +24,12 @@ body.light-mode {
   --btn-border: #0f2f2e;
   --btn-circle: #0f2f2e;
   --btn-shadow: #0f2f2e;
+
   /* Wave Colors (Light Mode) */
-  --wave-1: rgba(255, 255, 255, 0.7); /* Lightest */
+  --wave-1: rgba(255, 255, 255, 0.7);
   --wave-2: rgba(255, 255, 255, 0.5);
   --wave-3: rgba(255, 255, 255, 0.3);
-  --wave-4: #3b6967; /* Matches Background */
+  --wave-4: #3b6967;
 }
 
 body {
@@ -46,7 +48,7 @@ body {
   align-items: center;
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto 40px auto; /* Centered with bottom margin */
+  margin: 0 auto 40px auto;
 }
 
 .site-header .ModeToggle {
@@ -61,7 +63,6 @@ body {
   justify-self: end;
 }
 
-/* Responsive: Stack on smaller screens */
 @media (max-width: 768px) {
   .site-header {
     grid-template-columns: 1fr;
@@ -76,6 +77,6 @@ body {
   }
 
   .site-header .Navigation {
-    order: -1; /* Put navigation on top */
+    order: -1;
   }
 }
