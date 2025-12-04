@@ -13,7 +13,7 @@ if (viewTheme) {
 }
 
 // Typewriter Logic
-const command = 'cat about_me.txt';
+const command = 'cat landing_page.txt';
 const outputText =
   "Don Jackson, I'm a Software Engineering student at Southern New Hampshire University. I enjoy tinkering with electronics and building apps.";
 const typeSpeed = 50;
