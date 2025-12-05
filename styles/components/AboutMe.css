@@ -1,0 +1,276 @@
+/* Theme Variables - Mapped to Global */
+.cyber-about-section {
+    /* Use global variables */
+    --cyber-bg: transparent;
+    /* Let body background show */
+    --cyber-card-bg: rgba(0, 0, 0, 0.2);
+    /* Subtle dark overlay for cards */
+    --cyber-border: var(--nav-bg);
+
+    /* Text Colors */
+    --cyber-text-main: var(--text-color);
+    --cyber-text-muted: rgba(255, 255, 255, 0.6);
+    /* Fallback or opacity on white */
+
+    /* Accents */
+    --cyber-cyan: #ffffff;
+    /* Headings/Highlights */
+    --cyber-green: var(--nav-bg);
+    --cyber-pink: var(--nav-indicator);
+    --cyber-orange: #ffffff;
+
+    background-color: var(--cyber-bg);
+    color: var(--cyber-text-main);
+    padding: 60px 20px;
+    font-family: var(--font-family);
+    /* Use global font */
+}
+
+/* Header */
+/* Header */
+.cyber-header {
+    text-align: left;
+    margin-bottom: 40px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+}
+
+.cyber-header h2 {
+    font-size: 4rem;
+    color: var(--stat-color);
+    /* Adaptive Gray */
+    margin: 0;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-family: Impact, sans-serif;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.cyber-subtitle {
+    color: var(--nav-bg);
+    font-size: 1.2rem;
+    margin-top: 5px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Grid Layout */
+.cyber-grid {
+    display: grid;
+    grid-template-columns: 250px 1fr 1fr;
+    /* Photo | Specialties | TechStack */
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Base Card Styling */
+.cyber-card {
+    background-color: var(--cyber-card-bg);
+    border: 1px solid var(--cyber-border);
+    border-radius: 12px;
+    padding: 30px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cyber-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-color: var(--text-color);
+}
+
+/* Photo Card */
+.photo-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.photo-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    /* Removed grayscale filter to let photo show naturally */
+}
+
+/* Section Titles */
+.card-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    color: var(--cyber-text-main);
+    border-bottom: 1px solid var(--cyber-border);
+    padding-bottom: 15px;
+}
+
+.card-title .icon {
+    font-size: 1.8rem;
+}
+
+/* Specialties Items */
+.specialty-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.specialty-item:last-child {
+    margin-bottom: 0;
+}
+
+.specialty-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: var(--bg-color);
+    /* Dark Icon Text */
+    flex-shrink: 0;
+}
+
+/* Map all specific colors to consistent theme logic */
+.specialty-icon.cyan,
+.specialty-icon.green,
+.specialty-icon.pink,
+.specialty-icon.orange {
+    background-color: var(--nav-bg);
+    /* Unified Teal Background */
+    color: var(--stat-color);
+    /* Adaptive Gray Icon */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Subtle border */
+}
+
+.specialty-content h4 {
+    margin: 0 0 5px 0;
+    font-size: 1.1rem;
+    color: var(--cyber-text-main);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.specialty-content p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--cyber-text-muted);
+    line-height: 1.4;
+}
+
+/* Tech Proficiency */
+.tech-item {
+    margin-bottom: 20px;
+}
+
+.tech-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.tech-percent {
+    color: var(--stat-color);
+    /* Adaptive Gray */
+    font-weight: bold;
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Darker track */
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 5px;
+    width: 0;
+    background-color: var(--stat-color);
+    /* Adaptive Gray Fill */
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+    /* Subtle glow */
+    transition: width 1s ease-out;
+}
+
+/* Mission Statement */
+.mission-card {
+    margin-top: 30px;
+    border-left: 3px solid var(--nav-bg);
+}
+
+.mission-text {
+    color: var(--cyber-text-muted);
+    line-height: 1.6;
+}
+
+.status-line {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--cyber-border);
+    display: flex;
+    gap: 20px;
+    font-size: 0.8rem;
+    color: var(--nav-bg);
+}
+
+.status-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #00ff00;
+    /* Bright green */
+    border-radius: 50%;
+    margin-right: 5px;
+    box-shadow: 0 0 10px #00ff00, 0 0 5px #00ff00;
+    /* Glow effect */
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+        box-shadow: 0 0 10px #00ff00, 0 0 5px #00ff00;
+    }
+
+    50% {
+        opacity: 0.7;
+        box-shadow: 0 0 5px #00ff00, 0 0 2px #00ff00;
+    }
+
+    100% {
+        opacity: 1;
+        box-shadow: 0 0 10px #00ff00, 0 0 5px #00ff00;
+    }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .cyber-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}

@@ -9,12 +9,17 @@
   --btn-circle: #3b6967;
   --btn-shadow: #093331;
 
+  /* Adaptive Stat/Header Color */
+  --stat-color: #888888;
+  /* Dimmed Gray for Dark Mode (Less bright than #b0b0b0) */
+
   /* Wave Colors (Dark Mode) */
   --wave-1: rgba(59, 105, 103, 0.7);
   --wave-2: rgba(59, 105, 103, 0.5);
   --wave-3: rgba(59, 105, 103, 0.3);
   --wave-4: #0f2f2e;
-  --bg-color-rgb: 15, 47, 46; /* RGB of #0f2f2e */
+  --bg-color-rgb: 15, 47, 46;
+  /* RGB of #0f2f2e */
 }
 
 body.light-mode {
@@ -26,18 +31,24 @@ body.light-mode {
   --btn-circle: #0f2f2e;
   --btn-shadow: #0f2f2e;
 
+  /* Adaptive Stat/Header Color */
+  --stat-color: #ffffff;
+  /* White for Light Mode (User Preference) */
+
   /* Wave Colors (Light Mode) */
   --wave-1: rgba(255, 255, 255, 0.7);
   --wave-2: rgba(255, 255, 255, 0.5);
   --wave-3: rgba(255, 255, 255, 0.3);
   --wave-4: #3b6967;
-  --bg-color-rgb: 59, 105, 103; /* RGB of #3b6967 */
+  --bg-color-rgb: 59, 105, 103;
+  /* RGB of #3b6967 */
 }
 
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
-  scroll-snap-type: y mandatory; /* Enforce snapping */
+  /* Removed scroll-snap-type to allow natural scrolling for taller sections */
+
 }
 
 body {
@@ -59,13 +70,14 @@ body {
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   width: 100%;
-  max-width: 100%; /* Full width */
-  padding: 20px 40px; /* Add padding since we removed body padding */
+  max-width: 100%;
+  /* Full width */
+  padding: 20px 40px;
+  /* Add padding since we removed body padding */
   box-sizing: border-box;
-  background: rgba(
-    var(--bg-color-rgb),
-    0.8
-  ); /* We need RGB vars for this, or just use solid for now. Let's use a variable we'll define */
+  background: rgba(var(--bg-color-rgb),
+      0.8);
+  /* We need RGB vars for this, or just use solid for now. Let's use a variable we'll define */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   transition: background-color 0.3s ease;
@@ -81,22 +93,4 @@ body {
 
 .site-header .Download {
   justify-self: end;
-}
-
-@media (max-width: 768px) {
-  .site-header {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    justify-items: center;
-  }
-
-  .site-header .ModeToggle,
-  .site-header .Navigation,
-  .site-header .Download {
-    justify-self: center;
-  }
-
-  .site-header .Navigation {
-    order: -1;
-  }
 }

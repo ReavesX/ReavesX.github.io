@@ -1,0 +1,174 @@
+/* Reuse variables from AboutMe or define locally if scoping needed. 
+   Using Global Theme Vars now. */
+.cyber-skills-section {
+    /* Use global variables */
+    --cyber-bg: transparent;
+    --cyber-card-bg: rgba(0, 0, 0, 0.2);
+    --cyber-border: var(--nav-bg);
+    --cyber-text-main: var(--text-color);
+    --cyber-text-muted: rgba(255, 255, 255, 0.6);
+    --cyber-accent: var(--nav-bg);
+
+    background-color: var(--cyber-bg);
+    color: var(--cyber-text-main);
+    padding: 60px 20px;
+    font-family: var(--font-family);
+    /* Cleaner font for skills */
+    text-align: center;
+}
+
+.skills-category {
+    margin-bottom: 60px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills-category h3 {
+    color: var(--cyber-text-main);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.category-subtitle {
+    color: var(--cyber-text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Skill Card */
+.skill-card {
+    background-color: var(--cyber-card-bg);
+    border: 1px solid var(--cyber-border);
+    border-radius: 12px;
+    width: 140px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--text-color);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    /* Placeholder for actual img/svg */
+}
+
+.skill-name {
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: var(--cyber-text-main);
+}
+
+/* Progress Bar at bottom of card */
+.skill-progress-container {
+    width: 100%;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    margin-top: auto;
+    position: relative;
+}
+
+.skill-progress-bar {
+    height: 100%;
+    border-radius: 2px;
+    width: 0;
+    animation: skillFill 1s ease-out forwards;
+}
+
+.skill-level-text {
+    font-size: 0.7rem;
+    color: var(--cyber-text-muted);
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+@keyframes skillFill {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: var(--fill-width);
+    }
+}
+
+/* Specific Colors - Mapped to Theme (Using Adaptive Stat Color) */
+.skill-progress-bar {
+    background-color: var(--stat-color);
+    /* Adaptive Gray */
+}
+
+/* Skill Levels */
+.skill-intermediate {
+    border-color: var(--nav-bg);
+    box-shadow: 0 0 10px rgba(59, 105, 103, 0.2);
+    animation: pulseBorder 3s infinite;
+}
+
+.skill-intermediate .skill-icon {
+    transform: scale(1.1);
+}
+
+.skill-beginner {
+    border-color: rgba(255, 255, 255, 0.1);
+    opacity: 0.9;
+}
+
+.skill-planned {
+    border: 2px dashed rgba(255, 255, 255, 0.2);
+    background-color: transparent;
+}
+
+.skill-planned .skill-name {
+    color: var(--cyber-text-muted);
+    font-style: italic;
+}
+
+@keyframes pulseBorder {
+    0% {
+        box-shadow: 0 0 5px rgba(59, 105, 103, 0.2);
+    }
+
+    50% {
+        box-shadow: 0 0 15px rgba(59, 105, 103, 0.5);
+    }
+
+    100% {
+        box-shadow: 0 0 5px rgba(59, 105, 103, 0.2);
+    }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .skills-grid {
+        gap: 15px;
+    }
+
+    .skill-card {
+        width: 120px;
+        padding: 15px 10px;
+    }
+}
