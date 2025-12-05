@@ -14,11 +14,11 @@
   <link rel="stylesheet" href="styles/components/Typewriter.css" />
   <link rel="stylesheet" href="styles/components/AboutMe.css" />
   <link rel="stylesheet" href="styles/components/Skills.css" />
+  <link rel="stylesheet" href="styles/components/Projects.css" />
 </head>
 
 <body>
   <header class="site-header">
-    <!-- Mode Toggle -->
     <div class="ModeToggle">
       <input type="checkbox" class="theme-checkbox" id="theme-checkbox" />
     </div>
@@ -525,9 +525,160 @@
       </div>
     </section>
 
-    <section id="projects" class="content-section">
-      <h2>Projects</h2>
-      <p>Check out what I've built.</p>
+    <section id="projects" class="cyber-projects-section">
+      <div class="projects-header">
+        <h2>Featured Projects</h2>
+        <p class="projects-subtitle"> ACADEMIC_WORK // PERSONAL_BUILDS // AUTOMATION </p>
+      </div>
+
+      <!-- Inventory Filters -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All Items</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="embedded">Embedded</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="browser">Browser</button>
+        <button class="filter-btn" data-filter="terminal">Terminal</button>
+        <button class="filter-btn" data-filter="physical">Physical</button>
+        <button class="filter-btn" data-filter="automation">Automation</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Airgead Banking App -->
+        <div class="project-card" data-category="terminal">
+          <span class="project-badge badge-terminal">TERMINAL</span>
+          <div class="project-content">
+            <span class="project-icon">🏦</span>
+            <h3 class="project-title">Airgead Banking App</h3>
+            <p class="project-desc">A secure console-based banking simulation utilizing object-oriented principles for
+              account management and interest calculations.</p>
+            <div class="project-tech">
+              <span class="tech-pill">C++</span>
+              <span class="tech-pill">OOP</span>
+              <span class="tech-pill">Terminal</span>
+            </div>
+          </div>
+          <div class="project-actions">
+            <a href="#" class="btn-action btn-source">View Source</a>
+          </div>
+        </div>
+
+        <!-- Dual Clock Display -->
+        <div class="project-card" data-category="terminal">
+          <span class="project-badge badge-terminal">TERMINAL</span>
+          <div class="project-content">
+            <span class="project-icon">⏰</span>
+            <h3 class="project-title">Dual Clock Display</h3>
+            <p class="project-desc">Real-time digital clock simulation supporting simultaneous 12-hour and 24-hour time
+              formats with user input controls.</p>
+            <div class="project-tech">
+              <span class="tech-pill">C++</span>
+              <span class="tech-pill">Time Lib</span>
+              <span class="tech-pill">Terminal</span>
+            </div>
+          </div>
+          <div class="project-actions">
+            <a href="#" class="btn-action btn-source">View Source</a>
+          </div>
+        </div>
+
+        <!-- Digital Clock (Breadboard) -->
+        <div class="project-card" data-category="physical embedded">
+          <span class="project-badge badge-physical">PHYSICAL</span>
+          <div class="project-content">
+            <span class="project-icon">🔌</span>
+            <h3 class="project-title">Breadboard Digital Clock</h3>
+            <p class="project-desc">A fully functional digital clock circuit built from scratch on a breadboard using
+              logic gates and counters.</p>
+            <div class="project-tech">
+              <span class="tech-pill">Electronics</span>
+              <span class="tech-pill">Circuits</span>
+              <span class="tech-pill">Breadboard</span>
+            </div>
+          </div>
+          <div class="project-actions">
+            <a href="#" class="btn-action btn-source">Schematics</a>
+            <a href="#" class="btn-action btn-demo">▶ Watch Demo</a>
+          </div>
+        </div>
+
+        <!-- Dual LM1875 AMP -->
+        <div class="project-card" data-category="physical">
+          <span class="project-badge badge-physical">PHYSICAL</span>
+          <div class="project-content">
+            <span class="project-icon">🔊</span>
+            <h3 class="project-title">Dual LM1875 Amplifier</h3>
+            <p class="project-desc">High-fidelity audio amplifier featuring a custom-designed PCB and dual LM1875 chips
+              for superior sound quality.</p>
+            <div class="project-tech">
+              <span class="tech-pill">PCB Design</span>
+              <span class="tech-pill">Audio</span>
+              <span class="tech-pill">Soldering</span>
+            </div>
+          </div>
+          <div class="project-actions">
+            <a href="#" class="btn-action btn-source">View PCB</a>
+            <a href="#" class="btn-action btn-demo">▶ Watch Demo</a>
+          </div>
+        </div>
+
+        <!-- LM384 AMP -->
+        <div class="project-card" data-category="physical">
+          <span class="project-badge badge-physical">PHYSICAL</span>
+          <div class="project-content">
+            <span class="project-icon">📻</span>
+            <h3 class="project-title">LM384 Amplifier</h3>
+            <p class="project-desc">Compact audio amplifier implementation focused on efficient circuit design and
+              signal amplification.</p>
+            <div class="project-tech">
+              <span class="tech-pill">Electronics</span>
+              <span class="tech-pill">Schematics</span>
+              <span class="tech-pill">Audio</span>
+            </div>
+          </div>
+          <div class="project-actions">
+            <a href="#" class="btn-action btn-source">View Schematics</a>
+          </div>
+        </div>
+
+        <!-- Terminal RPG -->
+        <div class="project-card" data-category="terminal">
+          <span class="project-badge badge-terminal">TERMINAL</span>
+          <div class="project-content">
+            <span class="project-icon">⚔️</span>
+            <h3 class="project-title">Terminal RPG</h3>
+            <p class="project-desc">An interactive text-based role-playing game featuring character stats, combat
+              mechanics, and inventory management.</p>
+            <div class="project-tech">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Game Logic</span>
+              <span class="tech-pill">IT140</span>
+            </div>
+          </div>
+          <div class="project-actions">
+            <a href="#" class="btn-action btn-source">View Source</a>
+          </div>
+        </div>
+
+        <!-- Canvas Quiz Answerer -->
+        <div class="project-card" data-category="automation browser">
+          <span class="project-badge badge-automation">AUTOMATION</span>
+          <div class="project-content">
+            <span class="project-icon">🤖</span>
+            <h3 class="project-title">Canvas Quiz Bot</h3>
+            <p class="project-desc">Automated tool leveraging Selenium to interact with Canvas LMS quizzes. (Educational
+              Purpose Only)</p>
+            <div class="project-tech">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Selenium</span>
+              <span class="tech-pill">GitHub</span>
+            </div>
+          </div>
+          <div class="project-actions">
+            <a href="#" class="btn-action btn-source">View Source</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="contact" class="content-section">
