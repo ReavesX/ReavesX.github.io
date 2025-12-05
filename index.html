@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="styles/components/Waves.css" />
   <link rel="stylesheet" href="styles/layout/Sections.css" />
   <link rel="stylesheet" href="styles/components/Typewriter.css" />
+  <link rel="stylesheet" href="styles/components/AboutMe.css" />
+  <link rel="stylesheet" href="styles/components/Skills.css" />
 </head>
 
 <body>
@@ -72,14 +74,267 @@
       </div>
     </section>
 
-    <section id="about" class="content-section">
-      <h2>About Me</h2>
-      <p>Here is a little bit about who I am.</p>
+    <section id="about" class="cyber-about-section">
+      <div class="cyber-header">
+        <h2>PLAYER PROFILE</h2>
+        <p class="cyber-subtitle">CLASS: SOFTWARE ENGINEER | FOCUS: CODE & GAINS</p>
+      </div>
+
+      <div class="cyber-grid">
+        <!-- Photo Column -->
+        <div class="cyber-card photo-card">
+          <img src="images/103725783.jpg" alt="Profile Photo" />
+        </div>
+
+        <!-- Specialties Column -->
+        <div class="cyber-card specialties-card">
+          <div class="card-title">
+            <span class="icon">⚙️</span> Core Specialties
+          </div>
+
+          <div class="specialty-item">
+            <div class="specialty-icon cyan">💻</div>
+            <div class="specialty-content">
+              <h4>Full-Stack Development</h4>
+              <p>End-to-end web solutions, from responsive React UIs to robust server architectures.</p>
+            </div>
+          </div>
+
+          <div class="specialty-item">
+            <div class="specialty-icon green">🕹️</div>
+            <div class="specialty-content">
+              <h4>Embedded Systems</h4>
+              <p>Programming and interfacing with microcontrollers, IoT devices, and real-time systems.</p>
+            </div>
+          </div>
+
+          <div class="specialty-item">
+            <div class="specialty-icon pink">🔋</div>
+            <div class="specialty-content">
+              <h4>Hardware Analysis/Design</h4>
+              <p>Circuit design, component selection, troubleshooting, and hardware optimization.</p>
+            </div>
+          </div>
+
+          <div class="specialty-item">
+            <div class="specialty-icon orange">📱</div>
+            <div class="specialty-content">
+              <h4>Mobile App Development</h4>
+              <p>Cross-platform mobile applications with React Native and Flutter frameworks.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tech & Mission Column -->
+        <div class="cyber-column">
+          <!-- Tech Proficiency -->
+          <div class="cyber-card tech-card">
+            <div class="card-title">
+              <span class="icon color-green">&lt;/&gt;</span> Technology Proficiency
+            </div>
+
+            <div class="tech-item">
+              <div class="tech-header">
+                <span>C/C++</span>
+                <span class="tech-percent">70%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 70%;"></div>
+              </div>
+            </div>
+
+            <div class="tech-item">
+              <div class="tech-header">
+                <span>Python</span>
+                <span class="tech-percent">70%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 70%;"></div>
+              </div>
+            </div>
+
+            <div class="tech-item">
+              <div class="tech-header">
+                <span>React & TypeScript</span>
+                <span class="tech-percent">30%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 30%;"></div>
+              </div>
+            </div>
+
+            <div class="tech-item">
+              <div class="tech-header">
+                <span>MySQL & MongoDB</span>
+                <span class="tech-percent">30%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 30%;"></div>
+              </div>
+            </div>
+
+            <div class="tech-item">
+              <div class="tech-header">
+                <span>React Native</span>
+                <span class="tech-percent">10%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 10%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mission Statement -->
+          <div class="cyber-card mission-card">
+            <div class="card-title">
+              <span class="icon" style="color: var(--cyber-pink)">⚡</span> Mission Statement
+            </div>
+            <p class="mission-text">
+              <!-- Blank for now -->
+            </p>
+            <div class="status-line">
+              <span><span class="status-dot active-glow"></span> ACTIVE</span>
+              <span>💾 LEARNING_MODE: ON</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="skills" class="content-section">
-      <h2>Skills</h2>
-      <p>These are the technologies I work with.</p>
+    <section id="skills" class="cyber-skills-section">
+      <div class="cyber-header">
+        <h2>Skills & Technologies</h2>
+        <p class="cyber-subtitle">A comprehensive overview of my technical expertise across various domains.</p>
+      </div>
+
+      <!-- Programming Languages -->
+      <div class="skills-category">
+        <h3>Programming Languages</h3>
+        <span class="category-subtitle">Core languages & low-level development</span>
+        <div class="skills-grid">
+          <!-- C/C++ -->
+          <div class="skill-card skill-intermediate">
+            <span class="skill-icon">⚙️</span>
+            <span class="skill-name">C/C++</span>
+            <div class="skill-progress-container">
+              <div class="skill-progress-bar" style="--fill-width: 70%"></div>
+            </div>
+            <span class="skill-level-text">Intermediate</span>
+          </div>
+
+          <!-- Python -->
+          <div class="skill-card skill-intermediate">
+            <span class="skill-icon">🐍</span>
+            <span class="skill-name">Python</span>
+            <div class="skill-progress-container">
+              <div class="skill-progress-bar" style="--fill-width: 70%"></div>
+            </div>
+            <span class="skill-level-text">Intermediate</span>
+          </div>
+
+          <!-- TypeScript -->
+          <div class="skill-card skill-beginner">
+            <span class="skill-icon">TS</span>
+            <span class="skill-name">TypeScript</span>
+            <div class="skill-progress-container">
+              <div class="skill-progress-bar" style="--fill-width: 30%"></div>
+            </div>
+            <span class="skill-level-text">Beginner</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hardware & IoT -->
+      <div class="skills-category">
+        <h3>Hardware & IoT</h3>
+        <span class="category-subtitle">Embedded systems & physical computing</span>
+        <div class="skills-grid">
+          <!-- Embedded Systems -->
+          <div class="skill-card skill-intermediate">
+            <span class="skill-icon">🕹️</span>
+            <span class="skill-name">Embedded</span>
+            <div class="skill-progress-container">
+              <div class="skill-progress-bar" style="--fill-width: 65%"></div>
+            </div>
+            <span class="skill-level-text">Intermediate</span>
+          </div>
+
+          <!-- Hardware -->
+          <div class="skill-card skill-intermediate">
+            <span class="skill-icon">🔋</span>
+            <span class="skill-name">Hardware</span>
+            <div class="skill-progress-container">
+              <div class="skill-progress-bar" style="--fill-width: 60%"></div>
+            </div>
+            <span class="skill-level-text">Intermediate</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frontend Development -->
+      <div class="skills-category">
+        <h3>Frontend Development</h3>
+        <span class="category-subtitle">Creating modern user interfaces</span>
+        <div class="skills-grid">
+          <!-- React -->
+          <div class="skill-card skill-beginner">
+            <span class="skill-icon">⚛️</span>
+            <span class="skill-name">React</span>
+            <div class="skill-progress-container">
+              <div class="skill-progress-bar" style="--fill-width: 30%"></div>
+            </div>
+            <span class="skill-level-text">Beginner</span>
+          </div>
+
+          <!-- React Native -->
+          <div class="skill-card skill-beginner">
+            <span class="skill-icon">📱</span>
+            <span class="skill-name">React Native</span>
+            <div class="skill-progress-container">
+              <div class="skill-progress-bar" style="--fill-width: 10%"></div>
+            </div>
+            <span class="skill-level-text">Beginner</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Database & Storage -->
+      <div class="skills-category">
+        <h3>Database & Storage</h3>
+        <span class="category-subtitle">Managing data & persistence</span>
+        <div class="skills-grid">
+          <!-- SQL/Mongo -->
+          <div class="skill-card skill-beginner">
+            <span class="skill-icon">🗄️</span>
+            <span class="skill-name">Databases</span>
+            <div class="skill-progress-container">
+              <div class="skill-progress-bar" style="--fill-width: 30%"></div>
+            </div>
+            <span class="skill-level-text">Beginner</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Learning Roadmap -->
+      <div class="skills-category">
+        <h3>Learning Roadmap</h3>
+        <span class="category-subtitle">Goals for future expansion</span>
+        <div class="skills-grid">
+          <!-- Placeholder 1 -->
+          <div class="skill-card skill-planned">
+            <span class="skill-icon">🚀</span>
+            <span class="skill-name">New Framework</span>
+            <span class="skill-level-text">Planned</span>
+          </div>
+
+          <!-- Placeholder 2 -->
+          <div class="skill-card skill-planned">
+            <span class="skill-icon">🤖</span>
+            <span class="skill-name">AI Model</span>
+            <span class="skill-level-text">Planned</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="projects" class="content-section">

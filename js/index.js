@@ -16,31 +16,44 @@ if (viewTheme) {
 const command = 'cat landing_page.txt';
 const outputText =
   "Don Jackson, I'm a Software Engineering student at Southern New Hampshire University. I enjoy tinkering with electronics and building apps.";
+const finalCommand = './render_portfolio.sh --verbose'; // New command
 const typeSpeed = 50;
 const typeElement = document.getElementById('typewriter-text');
 let charIndex = 0;
-let isTypingCommand = true;
+let stage = 'command'; // 'command', 'output', 'finalCommand'
 
 function typeWriter() {
   if (!typeElement) return;
 
-  if (isTypingCommand) {
+  if (stage === 'command') {
     if (charIndex < command.length) {
       typeElement.innerHTML += command.charAt(charIndex);
       charIndex++;
       setTimeout(typeWriter, typeSpeed);
     } else {
-      // Command finished, wait a bit then show output
-      isTypingCommand = false;
+      stage = 'output';
       setTimeout(() => {
-        typeElement.innerHTML += '<br/><br/>'; // New line for output
-        charIndex = 0; // Reset for output text
+        typeElement.innerHTML += '<br/><br/>';
+        charIndex = 0;
         typeWriter();
       }, 500);
     }
-  } else {
+  } else if (stage === 'output') {
     if (charIndex < outputText.length) {
       typeElement.innerHTML += outputText.charAt(charIndex);
+      charIndex++;
+      setTimeout(typeWriter, typeSpeed);
+    } else {
+      stage = 'finalCommand';
+      setTimeout(() => {
+        typeElement.innerHTML += '<br/><br/><span class="prompt">&gt;</span> ';
+        charIndex = 0;
+        typeWriter();
+      }, 500);
+    }
+  } else if (stage === 'finalCommand') {
+    if (charIndex < finalCommand.length) {
+      typeElement.innerHTML += finalCommand.charAt(charIndex);
       charIndex++;
       setTimeout(typeWriter, typeSpeed);
     }
