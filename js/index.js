@@ -89,7 +89,7 @@ if (downloadCheckbox) {
 const navMap = {
   tab1: 'home',
   tab2: 'about',
-  tab3: 'skills',
+  tab3: 'section-skills',
   tab4: 'projects',
   tab5: 'contact',
 };
@@ -137,4 +137,37 @@ filterBtns.forEach(btn => {
       }
     });
   });
+});
+
+// Scroll Spy: Update Nav Tabs on Scroll
+const sectionObserverOptions = {
+  threshold: 0,
+  rootMargin: "-50% 0px -50% 0px" // Creates a single line detection zone in the middle of screen
+};
+
+const sectionObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const activeSectionId = entry.target.id;
+
+      // Find the tab that maps to this section
+      for (const [tabId, sectionId] of Object.entries(navMap)) {
+        if (sectionId === activeSectionId) {
+          const tabToSelect = document.getElementById(tabId);
+          if (tabToSelect && !tabToSelect.checked) {
+            tabToSelect.checked = true;
+          }
+          break;
+        }
+      }
+    }
+  });
+}, sectionObserverOptions);
+
+// Observe all sections defined in navMap
+Object.values(navMap).forEach((sectionId) => {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    sectionObserver.observe(section);
+  }
 });
