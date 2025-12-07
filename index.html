@@ -119,8 +119,8 @@
 
         <!-- Right Column: Stats & Controls -->
         <div class="menu-right-column">
-          <!-- Player Stats (Professional Polish) -->
-          <div class="menu-stats">
+          <!-- Player Stats (Default View) -->
+          <div id="hero-stats-panel" class="menu-stats">
             <div class="stat-row">
               <span class="stat-label">CLASS</span>
               <span class="stat-value">ENGINEER</span>
@@ -137,6 +137,25 @@
               "I build things that blink and things that think.<br>
               Bridging the gap between hardware and software with precision."
             </div>
+          </div>
+
+          <!-- Contact Panel (Hidden View) -->
+          <div id="hero-contact-panel" class="menu-stats contact-panel-hidden" style="display: none;">
+            <div class="panel-header">
+              <span class="stat-label">SECURE CHANNEL</span>
+              <button id="close-contact-btn" class="close-btn">×</button>
+            </div>
+
+            <form id="hero-contact-form" action="https://formspree.io/f/xwpgqgvp" method="POST">
+              <div class="hero-form-group">
+                <input type="email" name="email" placeholder="ENTER EMAIL..." required class="hero-input">
+              </div>
+              <div class="hero-form-group">
+                <textarea name="message" rows="3" placeholder="ENTER MESSAGE..." required class="hero-input"></textarea>
+              </div>
+              <button type="submit" id="hero-submit-btn" class="hero-submit-btn">SEND TRANSMISSION</button>
+              <p id="hero-form-status" class="hero-form-status"></p>
+            </form>
           </div>
 
           <!-- Menu Controls -->

@@ -1,7 +1,8 @@
 /* MAIN MENU HERO SECTION (Restored) */
 .hero-section {
     position: relative;
-    min-height: 100vh; /* Changed from height to min-height to prevent cutoff */
+    min-height: 100vh;
+    /* Changed from height to min-height to prevent cutoff */
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -10,7 +11,8 @@
     background-color: var(--bg-color);
     font-family: var(--font-family);
     /* Inter */
-    padding: 2rem 0; /* Added padding to ensure safe areas */
+    padding: 2rem 0;
+    /* Added padding to ensure safe areas */
 }
 
 /* Animated 3D Grid Background */
@@ -19,8 +21,9 @@
     top: 0;
     left: 0;
     width: 200%;
-    height: 200vh; /* Scaled to vh */
-    
+    height: 200vh;
+    /* Scaled to vh */
+
     /* Main Menu Colors (Themed) */
     background:
         linear-gradient(rgba(15, 47, 46, 0.5), rgba(15, 47, 46, 0.5)),
@@ -54,9 +57,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    max-width: 1400px; /* Increased max-width slightly */
+    max-width: 1400px;
+    /* Increased max-width slightly */
     gap: 4rem;
-    padding: 0 40px; /* Increased side padding */
+    padding: 0 40px;
+    /* Increased side padding */
 }
 
 /* Left: Menu Items */
@@ -68,11 +73,10 @@
 
 .menu-title {
     font-family: 'Impact', sans-serif;
-    font-size: clamp(4rem, 10vw, 8rem); /* Responsive font size */
-    /* BIGGER */
+    font-size: clamp(3.5rem, 9vw, 7rem);
+    /* Increased slightly */
     text-transform: uppercase;
     color: var(--text-color);
-    /* Themed */
     margin: 0;
     line-height: 0.9;
     letter-spacing: -2px;
@@ -80,12 +84,14 @@
 }
 
 .menu-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    /* Increased from 1rem */
     font-weight: 600;
     color: var(--nav-bg);
     letter-spacing: 3px;
     margin-top: 1rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3.5rem;
+    /* Increased from 3rem */
     text-transform: uppercase;
     font-family: var(--font-family);
 }
@@ -97,7 +103,8 @@
 }
 
 .menu-item {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
+    /* Increased from 3rem */
     font-weight: 900;
     color: var(--text-color);
     opacity: 0.8;
@@ -294,6 +301,8 @@
     border-left: 3px solid var(--nav-bg);
     padding-left: 15px;
 }
+
+/* Mobile */
 
 /* Mobile */
 @media (max-width: 900px) {
