@@ -1,5 +1,5 @@
 :root {
-  --font-family: Arial, sans-serif;
+  --font-family: 'Inter', sans-serif;
   --font-size: 14px;
   --text-color: lightgray;
   --bg-color: #0f2f2e;
@@ -44,8 +44,13 @@ body.light-mode {
   /* RGB of #3b6967 */
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 html {
-  scroll-behavior: smooth;
   scroll-padding-top: 100px;
   /* Removed scroll-snap-type to allow natural scrolling for taller sections */
 
@@ -58,6 +63,12 @@ body {
   font-size: var(--font-size);
   background-color: var(--bg-color);
   color: var(--text-color);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 /* Header Layout */
@@ -80,11 +91,17 @@ body {
   /* We need RGB vars for this, or just use solid for now. Let's use a variable we'll define */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hide Nav when on Home/Hero */
+.site-header.nav-hidden {
+  transform: translateY(-150%);
 }
 
 .site-header .ModeToggle {
   justify-self: start;
+  padding-left: 2rem;
 }
 
 .site-header .Navigation {
@@ -93,4 +110,5 @@ body {
 
 .site-header .Download {
   justify-self: end;
+  padding-right: 2rem;
 }
