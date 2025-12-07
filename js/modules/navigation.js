@@ -30,7 +30,7 @@ export function initNavigation() {
     const header = document.querySelector('.site-header');
 
     const sectionObserverOptions = {
-        threshold: 0.2, // Trigger when 20% of section is visible
+        threshold: 0.5, // Trigger when 50% of section is visible (Safer for detecting 'active')
         rootMargin: "0px"
     };
 
