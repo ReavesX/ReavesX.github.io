@@ -823,7 +823,7 @@
         <!-- Right: Contact Form -->
         <div class="contact-form-wrapper">
           <!-- TODO: Replace 'YOUR_FORM_ID' with your actual Formspree ID -->
-          <form class="contact-form" action="https://formspree.io/f/xqarlray" method="POST">
+          <form id="contact-form" class="contact-form" action="https://formspree.io/f/xqarlray" method="POST">
             <div class="form-header">
               <span>NEW_MESSAGE</span>
               <div class="form-controls">
@@ -848,11 +848,22 @@
               <textarea id="message" name="message" rows="5" placeholder="Type your message..." required></textarea>
             </div>
 
-            <button type="submit" class="submit-btn">
+            <button type="submit" class="submit-btn" id="submit-btn">
               SEND TRANSMISSION
               <span class="btn-glitch"></span>
             </button>
+            <p id="form-status" class="form-status"></p>
           </form>
+
+          <!-- Success Message (Hidden by default) -->
+          <div id="form-success" class="form-success" style="display: none;">
+            <div class="success-content">
+              <span class="success-icon">📡</span>
+              <h3>TRANSMISSION ESTABLISHED</h3>
+              <p>Data packet uploaded successfully. Stand by for response.</p>
+              <button class="reset-btn" onclick="location.reload()">SEND ANOTHER</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
