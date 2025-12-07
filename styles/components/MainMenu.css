@@ -1,7 +1,7 @@
 /* MAIN MENU HERO SECTION (Restored) */
 .hero-section {
     position: relative;
-    height: 100vh;
+    min-height: 100vh; /* Changed from height to min-height to prevent cutoff */
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -10,6 +10,7 @@
     background-color: var(--bg-color);
     font-family: var(--font-family);
     /* Inter */
+    padding: 2rem 0; /* Added padding to ensure safe areas */
 }
 
 /* Animated 3D Grid Background */
@@ -18,8 +19,8 @@
     top: 0;
     left: 0;
     width: 200%;
-    height: 200%;
-
+    height: 200vh; /* Scaled to vh */
+    
     /* Main Menu Colors (Themed) */
     background:
         linear-gradient(rgba(15, 47, 46, 0.5), rgba(15, 47, 46, 0.5)),
@@ -53,9 +54,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px; /* Increased max-width slightly */
     gap: 4rem;
-    padding: 0 20px;
+    padding: 0 40px; /* Increased side padding */
 }
 
 /* Left: Menu Items */
@@ -67,7 +68,7 @@
 
 .menu-title {
     font-family: 'Impact', sans-serif;
-    font-size: 8rem;
+    font-size: clamp(4rem, 10vw, 8rem); /* Responsive font size */
     /* BIGGER */
     text-transform: uppercase;
     color: var(--text-color);
