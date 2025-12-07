@@ -38,6 +38,7 @@
   <link rel="stylesheet" href="styles/components/AboutMe.css" />
   <link rel="stylesheet" href="styles/components/Skills.css" />
   <link rel="stylesheet" href="styles/components/Projects.css" />
+  <link rel="stylesheet" href="styles/components/Contact.css" />
 </head>
 
 <body>
@@ -777,9 +778,83 @@
       </div>
     </section>
 
-    <section id="contact" class="content-section">
-      <h2>Contact</h2>
-      <p>Get in touch.</p>
+    <section id="contact" class="contact-section">
+      <div class="contact-container">
+        <!-- Left: Contact Info -->
+        <div class="contact-info">
+          <h2>TRANSMISSION<br>DETAILS</h2>
+          <p class="contact-subtitle">INITIATE_COMMUNICATION_PROTOCOL</p>
+
+          <div class="contact-methods">
+            <div class="method-item">
+              <span class="method-icon">✉️</span>
+              <div class="method-details">
+                <span class="method-label">EMAIL_UPLINK (EDU)</span>
+                <a href="mailto:donald.jackson6@snhu.edu" class="method-value">donald.jackson6@snhu.edu</a>
+              </div>
+            </div>
+
+            <div class="method-item">
+              <span class="method-icon">🔐</span>
+              <div class="method-details">
+                <span class="method-label">SECURE_UPLINK (PROTON)</span>
+                <a href="mailto:donjacks0n@proton.me" class="method-value">donjacks0n@proton.me</a>
+              </div>
+            </div>
+
+            <div class="method-item">
+              <span class="method-icon">🔗</span>
+              <div class="method-details">
+                <span class="method-label">LINKEDIN_NODE</span>
+                <a href="#" class="method-value">/in/djackson4005</a>
+              </div>
+            </div>
+
+            <div class="method-item">
+              <span class="method-icon">🐙</span>
+              <div class="method-details">
+                <span class="method-label">GITHUB_REPO</span>
+                <a href="#" class="method-value">@ReavesX</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="contact-form-wrapper">
+          <!-- TODO: Replace 'YOUR_FORM_ID' with your actual Formspree ID -->
+          <form class="contact-form" action="https://formspree.io/f/xqarlray" method="POST">
+            <div class="form-header">
+              <span>NEW_MESSAGE</span>
+              <div class="form-controls">
+                <span class="control-dot red"></span>
+                <span class="control-dot yellow"></span>
+                <span class="control-dot green"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="name">USER_ID</label>
+              <input type="text" id="name" name="name" placeholder="Enter Name..." required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">RETURN_ADDRESS</label>
+              <input type="email" id="email" name="email" placeholder="Enter Email..." required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">DATA_PACKET</label>
+              <textarea id="message" name="message" rows="5" placeholder="Type your message..." required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              SEND TRANSMISSION
+              <span class="btn-glitch"></span>
+            </button>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -799,7 +874,6 @@
     </svg>
   </div>
 
-  <!-- Script -->
   <!-- Script -->
   <script type="module" src="js/main.js"></script>
 </body>
