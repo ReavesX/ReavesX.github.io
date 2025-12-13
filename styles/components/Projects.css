@@ -232,3 +232,136 @@
     background: rgba(255, 0, 0, 0.4);
     color: #fff;
 }
+
+/* Video Modal Styles */
+.video-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.video-modal.active {
+    display: flex;
+    opacity: 1;
+}
+
+.video-modal-content {
+    width: 90%;
+    max-width: 900px;
+    background: transparent;
+    position: relative;
+    padding: 2rem;
+}
+
+.video-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: var(--stat-color);
+}
+
+#video-title {
+    font-size: 1.2rem;
+    font-family: 'Impact', sans-serif;
+    letter-spacing: 1px;
+}
+
+.video-player-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* 16:9 Aspect Ratio Container */
+.video-container {
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    height: 0;
+    background: #000;
+    border: 1px solid var(--stat-color);
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+}
+
+.video-container iframe,
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-close-btn {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.video-close-btn:hover {
+    color: var(--stat-color);
+}
+
+.video-nav-btn {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--stat-color);
+    color: var(--stat-color);
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    user-select: none;
+    display: none;
+    /* hidden by default */
+}
+
+.video-nav-btn:hover {
+    background: var(--stat-color);
+    color: #000;
+}
+
+/* Visibility handled by JS */
+.video-nav-btn[style*="visibility: visible"] {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .video-modal-content {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .video-nav-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    .nav-prev {
+        left: 0;
+    }
+
+    .nav-next {
+        right: 0;
+    }
+}

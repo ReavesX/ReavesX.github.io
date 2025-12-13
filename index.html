@@ -27,6 +27,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles/components/Navigation.css" />
   <link rel="stylesheet" href="styles/base/global.css" />
   <link rel="stylesheet" href="styles/components/Download.css" />
@@ -330,7 +332,7 @@
         <div class="skills-grid">
           <!-- C/C++ -->
           <div class="skill-card skill-intermediate">
-            <span class="skill-icon">⚙️</span>
+            <i class="skill-icon devicon-cplusplus-plain"></i>
             <span class="skill-name">C/C++</span>
             <div class="skill-progress-container">
               <div class="skill-progress-bar" style="--fill-width: 70%"></div>
@@ -340,7 +342,7 @@
 
           <!-- Python -->
           <div class="skill-card skill-intermediate">
-            <span class="skill-icon">🐍</span>
+            <i class="skill-icon devicon-python-plain"></i>
             <span class="skill-name">Python</span>
             <div class="skill-progress-container">
               <div class="skill-progress-bar" style="--fill-width: 70%"></div>
@@ -350,7 +352,7 @@
 
           <!-- JavaScript -->
           <div class="skill-card skill-beginner">
-            <span class="skill-icon">JS</span>
+            <i class="skill-icon devicon-javascript-plain"></i>
             <span class="skill-name">JavaScript</span>
             <div class="skill-progress-container">
               <div class="skill-progress-bar" style="--fill-width: 30%"></div>
@@ -360,7 +362,7 @@
 
           <!-- TypeScript -->
           <div class="skill-card skill-beginner">
-            <span class="skill-icon">TS</span>
+            <i class="skill-icon devicon-typescript-plain"></i>
             <span class="skill-name">TypeScript</span>
             <div class="skill-progress-container">
               <div class="skill-progress-bar" style="--fill-width: 30%"></div>
@@ -370,7 +372,7 @@
 
           <!-- Assembly -->
           <div class="skill-card skill-beginner">
-            <span class="skill-icon">⌨️</span>
+            <i class="skill-icon fas fa-microchip"></i>
             <span class="skill-name">Assembly</span>
             <div class="skill-progress-container">
               <div class="skill-progress-bar" style="--fill-width: 15%"></div>
@@ -381,49 +383,116 @@
       </div>
 
       <!-- Hardware & IoT -->
+      <!-- Hardware & IoT -->
       <div class="skills-category">
         <h3>Hardware & IoT</h3>
         <span class="category-subtitle">Embedded systems & physical computing</span>
         <div class="skills-grid">
-          <!-- Embedded Systems -->
+          <!-- Component Selection -->
           <div class="skill-card skill-intermediate">
-            <span class="skill-icon">🕹️</span>
-            <span class="skill-name">Embedded</span>
+            <i class="skill-icon fas fa-clipboard-list"></i>
+            <span class="skill-name">Component Selection</span>
             <div class="skill-progress-container">
-              <div class="skill-progress-bar" style="--fill-width: 65%"></div>
+              <div class="skill-progress-bar" style="--fill-width: 85%"></div>
             </div>
-            <span class="skill-level-text">Intermediate</span>
+            <span class="skill-level-text">Proficient</span>
           </div>
 
-          <!-- Hardware -->
+          <!-- PIC Microcontrollers -->
           <div class="skill-card skill-intermediate">
-            <span class="skill-icon">🔋</span>
-            <span class="skill-name">Hardware</span>
+            <i class="skill-icon fas fa-microchip"></i>
+            <span class="skill-name">PIC Microcontrollers</span>
             <div class="skill-progress-container">
-              <div class="skill-progress-bar" style="--fill-width: 60%"></div>
+              <div class="skill-progress-bar" style="--fill-width: 75%"></div>
             </div>
-            <span class="skill-level-text">Intermediate</span>
+            <span class="skill-level-text">Proficient</span>
+          </div>
+
+          <!-- Soldering (Dual Bar) -->
+          <div class="skill-card skill-dual-progress">
+            <i class="skill-icon fas fa-burn"></i>
+            <span class="skill-name">Soldering</span>
+
+            <!-- Through-hole -->
+            <div class="sub-skill">
+              <span class="sub-skill-label">Through-hole</span>
+              <div class="skill-progress-container">
+                <div class="skill-progress-bar" style="--fill-width: 95%"></div>
+              </div>
+              <span class="skill-level-text">Proficient</span>
+            </div>
+
+            <!-- SMT -->
+            <div class="sub-skill">
+              <span class="sub-skill-label">SMT</span>
+              <div class="skill-progress-container">
+                <div class="skill-progress-bar" style="--fill-width: 50%"></div>
+              </div>
+              <span class="skill-level-text">Intermediate</span>
+            </div>
           </div>
 
           <!-- Arduino -->
           <div class="skill-card skill-beginner">
-            <span class="skill-icon">♾️</span>
+            <i class="skill-icon devicon-arduino-plain"></i>
             <span class="skill-name">Arduino</span>
             <div class="skill-progress-container">
-              <div class="skill-progress-bar" style="--fill-width: 40%"></div>
+              <div class="skill-progress-bar" style="--fill-width: 80%"></div>
             </div>
-            <span class="skill-level-text">Beginner</span>
+            <span class="skill-level-text">Proficient</span>
           </div>
 
           <!-- Raspberry Pi -->
           <div class="skill-card skill-beginner">
-            <span class="skill-icon">🍓</span>
+            <i class="skill-icon devicon-raspberrypi-plain"></i>
             <span class="skill-name">Raspberry Pi</span>
             <div class="skill-progress-container">
-              <div class="skill-progress-bar" style="--fill-width: 40%"></div>
+              <div class="skill-progress-bar" style="--fill-width: 75%"></div>
             </div>
-            <span class="skill-level-text">Beginner</span>
+            <span class="skill-level-text">Proficient</span>
           </div>
+
+          <!-- Lab Equipment Group -->
+          <!-- Multimeter -->
+          <div class="skill-card skill-intermediate">
+            <i class="skill-icon fas fa-bolt"></i>
+            <span class="skill-name">Multimeter</span>
+            <div class="skill-progress-container">
+              <div class="skill-progress-bar" style="--fill-width: 90%"></div>
+            </div>
+            <span class="skill-level-text">Proficient</span>
+          </div>
+
+          <!-- Oscilloscope -->
+          <div class="skill-card skill-intermediate">
+            <i class="skill-icon fas fa-wave-square"></i>
+            <span class="skill-name">Oscilloscope</span>
+            <div class="skill-progress-container">
+              <div class="skill-progress-bar" style="--fill-width: 85%"></div>
+            </div>
+            <span class="skill-level-text">Proficient</span>
+          </div>
+
+          <!-- Function Generator -->
+          <div class="skill-card skill-intermediate">
+            <i class="skill-icon fas fa-sine-wave"></i> <!-- Approx icon -->
+            <span class="skill-name">Func. Generator</span>
+            <div class="skill-progress-container">
+              <div class="skill-progress-bar" style="--fill-width: 85%"></div>
+            </div>
+            <span class="skill-level-text">Proficient</span>
+          </div>
+
+          <!-- Spectrum Analyzer -->
+          <div class="skill-card skill-intermediate">
+            <i class="skill-icon fas fa-chart-bar"></i>
+            <span class="skill-name">Spectrum Analyzer</span>
+            <div class="skill-progress-container">
+              <div class="skill-progress-bar" style="--fill-width: 80%"></div>
+            </div>
+            <span class="skill-level-text">Proficient</span>
+          </div>
+
         </div>
       </div>
 
@@ -675,7 +744,8 @@
             </div>
           </div>
           <div class="project-actions">
-            <a href="#" class="btn-action btn-source">View Source</a>
+            <a href="https://github.com/ReavesX/AirgeadBanking" target="_blank" class="btn-action btn-source">View
+              Source</a>
           </div>
         </div>
 
@@ -694,7 +764,7 @@
             </div>
           </div>
           <div class="project-actions">
-            <a href="#" class="btn-action btn-source">View Source</a>
+            <a href="https://github.com/ReavesX/TwoClocks" target="_blank" class="btn-action btn-source">View Source</a>
           </div>
         </div>
 
@@ -713,8 +783,16 @@
             </div>
           </div>
           <div class="project-actions">
-            <a href="#" class="btn-action btn-source">Schematics</a>
-            <a href="#" class="btn-action btn-demo">▶ Watch Demo</a>
+            <a href="https://github.com/ReavesX/ReavesX.github.io/blob/main/images/resume%20portfolio/Digital%20Clock%20Single%20Display%20Logic%20Level.ms14"
+              target="_blank" class="btn-action btn-source">Schematics</a>
+            <a href="#" class="btn-action btn-demo" data-video-sources='[
+              {"type": "youtube", "src": "nz618W_glu0", "title": "0-9 Counting"},
+              {"type": "youtube", "src": "H86r1fYd690", "title": "Function Gen CLK"},
+              {"type": "youtube", "src": "ScTHdmfo5PM", "title": "555 Timer CLK"},
+              {"type": "youtube", "src": "KO7EUyzUv2k", "title": "Relay Countdown"},
+              {"type": "youtube", "src": "dYT58fSrJsg", "title": "Rollover Test"},
+              {"type": "youtube", "src": "a83hJWxNT6w", "title": "24hr Fast Rollover"}
+            ]'>▶ Watch Demo</a>
           </div>
         </div>
 
@@ -733,17 +811,17 @@
             </div>
           </div>
           <div class="project-actions">
-            <a href="#" class="btn-action btn-source">View PCB</a>
-            <a href="#" class="btn-action btn-demo">▶ Watch Demo</a>
+            <a href="https://github.com/ReavesX/ReavesX.github.io/blob/main/images/resume%20portfolio/SMT%20Hi-FI%20Amp%20Ultiboard.ewprj"
+              target="_blank" class="btn-action btn-source">View PCB</a>
           </div>
         </div>
 
-        <!-- LM384 AMP -->
+        <!-- LM386 Amplifier -->
         <div class="project-card" data-category="physical">
           <span class="project-badge badge-physical">PHYSICAL</span>
           <div class="project-content">
             <span class="project-icon">📻</span>
-            <h3 class="project-title">LM384 Amplifier</h3>
+            <h3 class="project-title">LM386 Amplifier</h3>
             <p class="project-desc">Compact audio amplifier implementation focused on efficient circuit design and
               signal amplification.</p>
             <div class="project-tech">
@@ -753,7 +831,8 @@
             </div>
           </div>
           <div class="project-actions">
-            <a href="#" class="btn-action btn-source">View Schematics</a>
+            <a href="https://github.com/ReavesX/ReavesX.github.io/blob/main/images/resume%20portfolio/LM386_LinearIC_AudioAmp.ewprj"
+              target="_blank" class="btn-action btn-source">View PCB</a>
           </div>
         </div>
 
@@ -772,7 +851,8 @@
             </div>
           </div>
           <div class="project-actions">
-            <a href="#" class="btn-action btn-source">View Source</a>
+            <a href="https://github.com/ReavesX/IT140-TextBasedGame" target="_blank" class="btn-action btn-source">View
+              Source</a>
           </div>
         </div>
 
@@ -782,7 +862,8 @@
           <div class="project-content">
             <span class="project-icon">🤖</span>
             <h3 class="project-title">Canvas Quiz Bot</h3>
-            <p class="project-desc">Automated tool leveraging Selenium to interact with Canvas LMS quizzes. (Educational
+            <p class="project-desc">Automated tool leveraging Selenium to interact with Canvas LMS quizzes.
+              (Educational
               Purpose Only)</p>
             <div class="project-tech">
               <span class="tech-pill">Python</span>
@@ -791,7 +872,11 @@
             </div>
           </div>
           <div class="project-actions">
-            <a href="#" class="btn-action btn-source">View Source</a>
+            <a href="https://github.com/ReavesX/Canvas-Quiz-OpenAI-Answerer" target="_blank"
+              class="btn-action btn-source">View Source</a>
+            <a href="#" class="btn-action btn-demo"
+              data-video-sources='[{"type": "local", "src": "images/resume portfolio/Canvas Quiz Extension Working In Action.webm", "title": "Canvas Quiz Bot Demo"}]'>▶
+              Watch Demo</a>
           </div>
         </div>
       </div>
@@ -902,6 +987,26 @@
         <use xlink:href="#gentle-wave" x="48" y="7" />
       </g>
     </svg>
+  </div>
+
+  <!-- Video Modal -->
+  <div id="video-modal" class="video-modal">
+    <div class="video-modal-content">
+      <button id="video-close" class="video-close-btn">&times;</button>
+
+      <div class="video-header">
+        <h3 id="video-title"></h3>
+        <span id="video-counter" class="video-counter"></span>
+      </div>
+
+      <div class="video-player-wrapper">
+        <button id="video-prev" class="video-nav-btn nav-prev">&#10094;</button>
+        <div id="video-container" class="video-container">
+          <!-- Video/Iframe injected here -->
+        </div>
+        <button id="video-next" class="video-nav-btn nav-next">&#10095;</button>
+      </div>
+    </div>
   </div>
 
   <!-- Script -->

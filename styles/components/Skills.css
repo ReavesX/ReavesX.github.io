@@ -147,6 +147,46 @@
     font-style: italic;
 }
 
+/* --- New Styles for Hardware Refactor --- */
+
+/* Wider card for dual-bar skills */
+.skill-dual-progress {
+    width: 250px;
+    /* Wider to accommodate two bars */
+    border-color: var(--nav-bg);
+}
+
+.sub-skill {
+    width: 100%;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.sub-skill-label {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--cyber-text-muted);
+    margin-bottom: 3px;
+}
+
+/* Ensure icons render well */
+.skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: var(--text-color);
+    /* Apply theme color to icons */
+    transition: transform 0.3s ease;
+}
+
+/* Specific overrides for color brands if desired, 
+   but keeping unified theme color is often cleaner for this aesthetic. 
+   Uncomment below to use brand colors. */
+/* 
+.devicon-cplusplus-plain { color: #00599C; }
+.devicon-python-plain { color: #3776AB; }
+.devicon-javascript-plain { color: #F7DF1E; }
+*/
+
 @keyframes pulseBorder {
     0% {
         box-shadow: 0 0 5px rgba(59, 105, 103, 0.2);
